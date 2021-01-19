@@ -1,6 +1,6 @@
 <?php 
 
-class Pages{
+class Pages extends Controller{
 
 	public function __construct(){
 		// echo 'PAGES LOADDE';
@@ -8,7 +8,7 @@ class Pages{
 
 
 	public function index(){
-
+		// $this->view('hello');
 	}
 
 
