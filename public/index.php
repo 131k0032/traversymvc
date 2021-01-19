@@ -4,4 +4,4 @@
 require_once '../app/bootstrap.php';
 
 //Init Core Library
-$inti = new Core;
+$init = new Core;
