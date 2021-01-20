@@ -4,12 +4,20 @@ class Pages extends Controller{
 
 	public function __construct(){
 		// echo 'PAGES LOADDE';
+		$this->postModel=$this->model('Post');//Load the model
 	}
 
 
 	public function index(){
 		// $this->view('hello');
-		$data=['title'=>'Welcome'];
+		$post = $this->postModel->getPosts(); //Call a model functio
+
+		$data=[
+			'title'=>'Welcome',
+			'posts'=>$post
+		];
+
+	
 
 		$this->view('pages/index', $data);
 	}
